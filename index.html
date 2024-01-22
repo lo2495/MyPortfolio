@@ -1,54 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skills</a>
+      <a href="#projects">My Projects</a>
+    </nav>
   </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies, nisi vitae ultricies finibus, nunc urna aliquet ex, vitae blandit enim leo vitae risus.</p>
-  </section>
-  
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui arcu, vestibulum id metus eget, bibendum ultricies lacus.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui arcu, vestibulum id metus eget, bibendum ultricies lacus.</p>
+  <section class="home">
+    <div class="home-content">
+      <h3>Hello</h3>
+      <h1>Henry Lo</h1>
+      <h3>And I am a <span class="text"></span></h3>
+      <p>Junior Software Engineer</p>
+      <div class="home-sci">
+        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+      </div>
     </div>
   </section>
-  
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
-      <input type="submit" value="Send">
-    </form>
+  <section class="about" id="about">
+    <div class="about-img">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h4>Junior Software Engineer!</h4>
+      <p>The sun rose over the horizon, casting a warm golden glow across the meadow. Birds chirped in harmony, their
+        melodies filling the air with a symphony of sound. Dewdrops glistened on blades of grass, like tiny treasures
+        scattered across the earth. A gentle breeze whispered through the trees, carrying the scent of blossoming
+        flowers. The sound of a distant waterfall echoed in the distance, a soothing cascade of water meeting the earth
+        below. As I walked along the path, I felt a sense of tranquility enveloping me, a moment of solitude amidst the
+        bustling world. The vibrant colors of a rainbow stretched across the sky, painting a picture of enchantment. I
+        closed my eyes, letting the serenity of the moment wash over me like velvet. In that serene twilight, I found
+        myself lost in a world of wonder and curiosity, where time seemed to stand still. The misty air added an
+        ethereal touch to the landscape, as if I had stepped into a dream. I smiled, feeling a jubilant energy coursing
+        through my veins, embracing the joy of the present. Memories of past adventures meandered through my mind,
+        evoking a sense of nostalgia. And as the sun set, casting a final radiant glow on the horizon, I whispered a
+        lullaby to the world, bidding it goodnight.</p>
+    </div>
   </section>
-  
-  <footer>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-  </footer>
+  <section class="skill" id="skill">
+    <div class="skill-content">
+      <h2>My Skills</h2>
+      <div class="container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="html5-logo.png" class="skill-icon">
+            </div>
+            <h3>HTML 5</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="css-logo.png" class="skill-icon">
+            </div>
+            <h3>CSS 3</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="angular-logo.png" class="skill-icon">
+            </div>
+            <h3>Angular</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="java-logo-3.png" class="skill-icon">
+            </div>
+            <h3>Java</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="python-logo.png" class="skill-icon">
+            </div>
+            <h3>Python</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="skill-img">
+              <img src="mysql-logo-1.png" class="skill-icon">
+            </div>
+            <h3> MySQL</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dignissimos expedita ipsa ducimus
+            recusandae quod sint nesciunt voluptate aliquam, aspernatur quaerat magnam incidunt adipisci iste molestiae
+            quos harum ipsam quis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="project-content">
+      <h2>Latest Project</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <img src="images.jpeg" alt="">
+          <div class="project-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images (1).jpeg" alt="">
+          <div class="project-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="project-box">
+          <img src="images (2).jpeg" alt="">
+          <div class="project-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <p>Developed by Henry Lo 2024</p>
+  </div>
+  <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+  <script src="main.js"></script>
 </body>
+
 </html>
